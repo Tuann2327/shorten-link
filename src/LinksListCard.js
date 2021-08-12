@@ -34,8 +34,8 @@ const ListCard = (props)=>{
                     <a className={link.err?'link-err':'short-link'}>
                         {link.shortlink}
                     </a>
+                    {isValid(link.err,index)}
                 </div>
-                {isValid(link.err,index)}
             </div>
         )
     })
